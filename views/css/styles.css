@@ -1,0 +1,167 @@
+* {
+    text-decoration: none;
+    list-style-type: none;
+}
+
+body {
+    background: black;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px 10px 0 0;
+    border-bottom: 1px solid black;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-around;
+    font-size: 150%;
+    background: white;
+}
+
+.nav li {
+    background: black;
+    padding: 10px;
+}
+
+form {
+    background: black;
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 50%;
+    margin-left: 25%;
+    font-size: 150%;
+}
+
+label {
+    background: red;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 5px;
+    border-radius: 5px 0 0 5px;
+    box-shadow: inset 0 0 0 2px white;
+}
+
+input {
+    background: hotpink;
+    padding: 5px;
+    border-radius: 0 5px 5px 0;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+#btn {
+    margin-left: 25%;
+    margin-bottom: 5px;
+    width: 50%;
+    grid-column: 1 / 3;
+    font-size: 80%;
+    border-radius: 10px;
+}
+
+
+#container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    grid-gap: 8px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    border: 3px solid white;
+    border-radius: 10px;
+}
+
+img {
+    grid-column: 1 / 3;
+}
+
+h3 {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    color: white;
+    text-align: center;
+}
+
+.price {
+    background: blue;
+    display: flex;
+    justify-content: center;
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    border-radius: 5px 0 0 5px;
+    border: 3px solid white;
+    border-right: none;
+    box-shadow: -4px 4px 0 2px hsl(0, 0%, 60%);
+}
+
+p {
+    color: white;
+    text-align: center;
+    grid-column: span 2;
+}
+
+.shoppingCart {
+    background: olivedrab;
+}
+
+.fas {
+    color: red;
+    background: yellow;
+    position: relative;
+}
+
+.shopping {
+    position: absolute;
+    color: black;
+    background: hotpink;
+    top: 0;
+    border-radius: 999px;
+    font-size: 50%;
+    font-weight: 1000;
+}
+
+
+/* ------- the form ------- */
+
+/* ---- #btn submit ?? ---- */
+
+input.fname {
+    width: 100%;
+    border: 1px solid #333;
+    margin: 0;
+  
+    font-family: inherit;
+    font-size: 90%;
+}
+
+/* this is our style for the invalid fields */
+
+input:invalid {
+    border-color: #900;
+    background-color: #FDD;
+}
+
+/* this is our style for our error messages */
+
+.error {
+    text-align: center;
+    font-size: 80%;
+    color: white;
+    background-color: #900;
+    border-radius: 0 10px 10px 0;
+}
+
+.error.active {
+    margin: 5px 0;
+
+}
